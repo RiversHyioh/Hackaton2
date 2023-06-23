@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Lato:wght@100;300;400&family=Montserrat:wght@300&family=Roboto+Condensed&family=Teko:wght@300&display=swap');
+
+/* Damos estilo al body (contorno de la página) */
+body {
+    box-sizing: border-box;
+    font-family: 'Geologica';
+    text-align: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: rgb(244, 248, 248);
+}
+
+/* Damos estilo al formulario */
+form {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Damos estilos a los input y listas seleccionadas*/
+input,
+select {
+    padding: 0.8%;
+    border-radius: 8%;
+    margin: 1.5% 1%;
+    text-align: left;
+    font-size: 100%;
+}
+
+.user input {
+    width: 27%;
+    margin-left: 4%;
+}
+#city {
+    width: 32%;
+    margin-left: 4%;
+}
+#postal{
+    width: 20%;
+    margin-left: 4%;
+}
+
+#email, #address {
+    width: 74%;
+}
+#email {
+    margin-left: 3.5%;
+}
+
+#check {
+    text-align: left;
+    margin-left: 5%;
+}
+
+#bank {
+    width: 65%;
+}
+#count2 {
+    margin-left: 4%;
+}
+
+#user {
+    margin-left: 4%;
+}
+#password {
+    margin-left: 5%;
+}
+
+/* Damos estilo a los botones */
+button {
+    padding: 2%;
+    width: 12vh;
+    border-radius: 20%;
+    font-size: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+}
+
+#section-pay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2";
+}
+
+.PSE {
+    grid-area: div1;
+}
+.card {
+    grid-area: div2;
+}
+#card-data {
+    margin-top: 2%;
+    text-align: center;
+}
