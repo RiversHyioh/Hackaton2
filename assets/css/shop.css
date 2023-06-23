@@ -2,10 +2,10 @@
 :root{
     --white: #fff;
     --light: #eeeded;
-    --orange: #FFA16C;
+    --yellow: yellow;
 }
 body{
-    background-color: var(--orange);
+    background-color: var(--yellow);
     font-family: system-ui;
     overflow: hidden;
 }
@@ -43,7 +43,7 @@ body{
     height:40px;
 }
 .menu .logo span{
-    color: var(--orange);
+    color: var(--yellow);
 }
 .menu ul{
     padding:20px 0 20px 20px;
@@ -57,16 +57,17 @@ body{
     margin-right: 12px;
 }
 .menu ul li.active{
-    color: var(--orange);
-    border-right: 2px solid var(--orange);
+    color: var(--yellow);
+    border-right: 2px solid var(--yellow);
 }
 .menu ul li:hover{
-    color: var(--orange);
-    border-right: 2px solid var(--orange);
+    color: var(--yellow);
+    border-right: 2px solid var(--yellow);
 }
 /* end menu */
 /* center */
     /* form */
+
 .center .search{
     background-color: var(--white);
     padding:20px;
@@ -87,7 +88,7 @@ body{
 }
 .center .search .form button{
    border:none;
-   background-color: var(--orange);
+   background-color: var(--yellow);
    color: var(--light);
    padding:10px 20px;
    border-radius: 20px;
@@ -104,6 +105,13 @@ body{
     grid-template-columns: auto auto;
     column-gap: 20px;
     row-gap: 20px;
+}
+
+.list {
+    width: 50vw;
+    height: 50vh;
+    padding: 20px;
+    overflow: auto;
 }
 .item{
     background-color: var(--white);
@@ -132,7 +140,7 @@ body{
     margin-top:5px;
 }
 .item .content .price{
-    color:var(--orange);
+    color:var(--yellow);
     letter-spacing: 2px;
     font-weight: 500;
     font-size: small;
@@ -149,7 +157,7 @@ body{
 }
 .item .content .add{
     margin-top:5px;
-    background-color: var(--orange);
+    background-color: var(--yellow);
     color:var(--white);
     padding:5px 10px;
     border:none;
@@ -176,7 +184,7 @@ body{
     border-bottom:1px solid var(--light)
 }
 .danger{
-    box-shadow: 0 10px 10px var(--orange);
+    box-shadow: 0 10px 10px var(--yellow);
     transform: translate(0,-10px);
 }
 .cart .add{
