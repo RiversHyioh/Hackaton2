@@ -7,9 +7,32 @@
     <title>Pasarela de Pagos</title>
     <link rel="stylesheet" href="/assets/css/pay.css">
     <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="/assets/css/shop.css">
 </head>
 
 <body>
+    <header class="header" data-header>
+        <img src="./assets/images/logoferr.jpg.png" alt="Smart Tools logo">
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="pay.html" class="navbar-link">Pay</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="shop.html" class="navbar-link">Shop</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!-- Creamos el formulario de pago y envío de los productos -->
     <section>
         <form class="form">
@@ -22,7 +45,7 @@
                 <input type="text" id="lastName" required>
             </div>
             <div id="data">
-                <label>Correo</label>
+                <label>Correo @</label>
                 <input type="email" id="email" required><br>
                 <label>Dirección</label>
                 <input type="text" id="address" required><br>
@@ -67,9 +90,9 @@
                         <option>Nequi</option>
                     </select><br>
                     <input type="radio" class="form-check-input" id="count1" name="radio-stacked" required>
-                    <label id="label1">Ahorros</label>
+                    <label id="label1">Cuenta de Ahorros</label>
                     <input type="radio" class="form-check-input" id="count2" name="radio-stacked" required>
-                    <label id="label">Corriente</label><br>
+                    <label id="label">Cuenta Corriente</label><br>
                     <label>Usuario</label>
                     <input type="text" id="user" required><br>
                     <label>Contraseña</label>
@@ -80,10 +103,10 @@
                     <!-- Pago por tarjeta -->
                     <div class="pay-check">
                         <h3>Pago con tarjeta</h3>
+                        <input type="radio" class="form-check-input" id="pago1" name="radio-stacked" required>
+                        <label>Tarjeta de Crédito</label><br>
                         <input type="radio" class="form-check-input" id="pago2" name="radio-stacked" required>
-                        <label>Tarjeta de Crédito</label>
-                        <input type="radio" class="form-check-input" id="pago3" name="radio-stacked" required>
-                        <label>Tarjeta de débito</label>
+                        <label>Tarjeta de Débito</label>
                     </div>
                     <div id="card-data">
                         <label id="label">Nombre de la tarjeta</label><br>
@@ -95,7 +118,7 @@
                         <label>CVV</label><br>
                         <input type="text" id="cvv" required>
                     </div>
-                    <button onclick="pay()">Pagar</button>
+                    <button id="payButton" onclick="pay()">Pagar</button>
                 </div>
             </section>
         </form>
@@ -103,4 +126,5 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/assets/js/pay.js"></script>
 </body>
+
 </html>

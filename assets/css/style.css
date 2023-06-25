@@ -396,7 +396,7 @@ body {
   font-size: 30px;
   background: var(--bittersweet);
   color: var(--white);
-  padding: 8px;
+  padding: 4px;
 }
 
 .nav-open-btn:is(:hover, :focus) { background: yellow; }

@@ -6,23 +6,27 @@ function login() {
         Swal.fire({
             title: "Aprobado",
             icon: "success",
-            text: "Su pago se ha efectuado exitosamente",
-            color: '#3A207E ',
-            background: '#DCE8E9',
+            text: "Su pago se ha efectuado exitosamente, Gracias por su compra",
+            color: '#090908',
+            background: '#f4f60d',
             width: '80vh',
-            confirmButtonColor: '#04166C',
+            confirmButtonColor: '#090908',
             confirmButtonText: 'Inicio',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'index.html';
+            };
         });
-        window.location.href = 'index.html'
+
     } else {
         Swal.fire({
             title: "Error",
             icon: "error",
             text: "Usuario o contraseña incorrecto",
-            color: '#3A207E ',
-            background: '#DCE8E9',
+            color: '#090908',
+            background: '#f4f60d',
             width: '80vh',
-            confirmButtonColor: '#04166C',
+            confirmButtonColor: '#090908',
             confirmButtonText: 'Aceptar',
         });
     };
@@ -38,23 +42,26 @@ function pay() {
         Swal.fire({
             title: "Aprobado",
             icon: "success",
-            text: "Su pago se ha efectuado exitosamente",
+            text: "Su pago se ha efectuado exitosamente, Gracias por su compra",
             color: '#3A207E ',
-            background: '#DCE8E9',
+            background: '#f4f60d',
             width: '80vh',
-            confirmButtonColor: '#04166C',
+            confirmButtonColor: '#090908',
             confirmButtonText: 'Inicio',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'index.html';
+            };
         });
-        window.location.href = 'index.html'
     } else {
         Swal.fire({
             title: "Error",
             icon: "error",
             text: "Validación incorrecta, por favor verifique",
             color: '#3A207E ',
-            background: '#DCE8E9',
+            background: '#f4f60d',
             width: '80vh',
-            confirmButtonColor: '#04166C',
+            confirmButtonColor: '#090908',
             confirmButtonText: 'Aceptar',
         });
     };

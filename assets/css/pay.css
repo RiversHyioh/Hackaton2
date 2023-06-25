@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Lato:wght@100;300;400&family=Montserrat:wght@300&family=Roboto+Condensed&family=Teko:wght@300&display=swap');
 
-/* Damos estilo al body (contorno de la página) */
-body {
-    box-sizing: border-box;
-    font-family: 'Geologica';
-    text-align: center;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background-color: rgb(244, 248, 248);
-}
-
 /* Damos estilo al formulario */
 form {
-    max-width: 90%;
-    margin: auto;
+    background-color: yellow;
+    max-width: 80%;
+    margin: 2% auto;
+    border-radius: 4%;
+    padding: 5%;
+    font-family: 'Geologica';
+    font-weight: 600;
+}
+
+h1{
+    text-align: center;
+    padding: 2%;
 }
 
 /* Damos estilos a los input y listas seleccionadas*/
@@ -27,12 +27,13 @@ select {
 }
 
 .user input {
-    width: 27%;
+    width: 28%;
     margin-left: 4%;
 }
 #city {
     width: 32%;
     margin-left: 4%;
+    text-align: center;
 }
 #postal{
     width: 20%;
@@ -40,10 +41,8 @@ select {
 }
 
 #email, #address {
-    width: 74%;
-}
-#email {
-    margin-left: 3.5%;
+    width: 70%;
+    margin-left: 3%;
 }
 
 #check {
@@ -53,13 +52,15 @@ select {
 
 #bank {
     width: 65%;
+    text-align: center;
+    margin-left: 5%;
 }
 #count2 {
     margin-left: 4%;
 }
 
 #user {
-    margin-left: 4%;
+    margin-left: 10%;
 }
 #password {
     margin-left: 5%;
@@ -68,15 +69,21 @@ select {
 /* Damos estilo a los botones */
 button {
     padding: 2%;
-    width: 12vh;
+    width: 15vh;
     border-radius: 20%;
     font-size: 100%;
     background-color: black;
     color: white;
     margin-top: 2%;
+    margin-left: 25%;
+}
+
+#payButton {
+    margin-left: 43%;
 }
 
 #section-pay {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -85,11 +92,26 @@ button {
 
 .PSE {
     grid-area: div1;
+    
 }
 .card {
     grid-area: div2;
 }
+
 #card-data {
-    margin-top: 2%;
+    margin-top: 4%;
     text-align: center;
 }
+.pay-check input{
+    line-height: 5vh;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+h3{
+    text-align: center;
+    font-size: 3vh;
+    background-color: black;
+    color: yellow;
+    margin: 0 5%;
+}
+
