@@ -26,7 +26,7 @@
   --black_90: hsla(0, 0%, 0%, 0.9);
   --cultured: hsl(200, 12%, 95%);
   --salmon: yellow;
-  --white: hsl(0, 0%, 100%);
+  --white:  hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
 
@@ -106,13 +106,12 @@ input {
 .logo{
   color: black;
   font-family: 'Lobster', cursive;
-  font-size: xx-large;
-  width: 50px;
-  height:40px;
+  font-size: 2rem;
 }
 
 .logo span{
   color: yellow;
+  display: inline-block;
 }
 
 input { width: 100%; }
